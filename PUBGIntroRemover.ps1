@@ -40,7 +40,7 @@ foreach ($i in $PUBGIntroItems)
     if ($i -match '\.mp4$')
     {
         Write-Host "$i seems to be a mp4-file. Changing name..."
-        Rename-Item -Path "$PUBGIntroPath\$i" "$i.bak"
+        Rename-Item -Path "$PUBGIntroPath\$i" "$i.bak" -Force
     }
     else
     {
